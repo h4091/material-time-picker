@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dialog_top_header">#73AADF</color>
+    <color name="dialog_header">#7FB5ED</color>
+    <color name="selected_bg">#6DA6DB</color>
+    <color name="datetime_letter_color_selected">@android:color/white</color>
+    <color name="datetime_letter_color">#E9E9E9</color>
+    <color name="dialog_header_text_color">@android:color/white</color>
+    <color name="datetime_kb_color_enabled">#6D7580</color>
+    <color name="datetime_kb_color_disabled">#AEB8C5</color>
+</resources>
