@@ -1,8 +1,3 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.mostroverkhov.materialtimepicker">
-
-    <application android:theme="@style/AppTheme">
-
-    </application>
+<manifest package="com.github.mostroverkhov.materialtimepicker">
 
 </manifest>

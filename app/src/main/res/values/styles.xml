@@ -8,4 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BlueDialog" parent="DefMaterialDialogStyle" />
+
+    <style name="GreenDialog" parent="DefMaterialDialogStyle">
+        <item name="headerBackgroundColor">@android:color/holo_green_light</item>
+        <item name="captionBackgroundColor">@android:color/holo_green_dark</item>
+        <item name="selectionBackgroundColor">@android:color/holo_green_dark</item>
+    </style>
+
+    <style name="RedDialog" parent="DefMaterialDialogStyle">
+        <item name="headerBackgroundColor">@android:color/holo_red_light</item>
+        <item name="captionBackgroundColor">@android:color/holo_red_dark</item>
+        <item name="selectionBackgroundColor">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="OrangeDialog" parent="DefMaterialDialogStyle">
+        <item name="headerBackgroundColor">@android:color/holo_orange_light</item>
+        <item name="captionBackgroundColor">@android:color/holo_orange_dark</item>
+        <item name="selectionBackgroundColor">@android:color/holo_orange_dark</item>
+    </style>
 </resources>

@@ -1,11 +1,43 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="DialogAnimations" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_anim_exit</item>
     </style>
 
+    <style name="DefDigitStyle">
+        <item name="android:textColor">@color/time_text_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">64sp</item>
+    </style>
+
+    <style name="DefKbStyle">
+        <item name="android:textColor">@color/keyboard_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DefDoneBtnStyle">
+        <item name="android:textColor">@color/ok_button_text_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DefCaptionTextStyle">
+        <item name="android:textColor">@color/dialog_header_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DefMaterialDialogStyle">
+        <item name="captionTextStyle">@style/DefCaptionTextStyle</item>
+        <item name="captionBackgroundColor">@color/dialog_top_header</item>
+        <item name="headerBackgroundColor">@color/dialog_header</item>
+        <item name="selectionBackgroundColor">@color/selected_bg</item>
+        <item name="dialogBackgroundColor">@color/dialog_bg</item>
+        <item name="timeColorStyle">@color/datetime_letter_color_selected</item>
+        <item name="digitColorStyle">@style/DefDigitStyle</item>
+        <item name="keyboardColorStyle">@style/DefKbStyle</item>
+        <item name="doneColorStyle">@style/DefDoneBtnStyle</item>
+    </style>
 </resources>

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">material-time-picker</string>
     <string name="set_time_caption">Set time</string>
+    <string name="material_dialog_ok_button">done</string>
 </resources>

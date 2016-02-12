@@ -1,102 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_reveal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/dialog_bg">
+    android:background="@null">
 
-    <TextView
-        android:id="@+id/material_dialog_top_header"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/material_dialog_root_id"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/top_header_bg"
-        android:gravity="center_vertical"
-        android:paddingLeft="15dp"
-        android:text="@string/set_time_caption"
-        android:textColor="@color/dialog_header_text_color"
-        android:textStyle="bold"
-        tools:text="Set time" />
-
-    <FrameLayout
-        android:id="@+id/material_dialog_time_container"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_below="@+id/material_dialog_top_header"
-        android:background="@color/dialog_header">
-
-        <RelativeLayout
-            android:layout_width="@dimen/time_picker_content_width"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal">
-
-            <ImageView
-                android:id="@+id/material_dialog_animated_bg"
-                android:src="@drawable/animated_bg"
-                android:layout_centerVertical="true"
-                android:layout_width="@dimen/time_item_width"
-                android:layout_height="72dp" />
-
-            <TextView
-                android:id="@+id/material_dialog_first_hour"
-                android:layout_width="@dimen/time_item_width"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="@color/time_text_color"
-                android:textSize="64dp" />
-
-            <TextView
-                android:id="@+id/material_dialog_second_hour"
-                android:layout_width="@dimen/time_item_width"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/material_dialog_first_hour"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:text="5"
-                android:textColor="@color/time_text_color"
-                android:textSize="64dp" />
-
-            <TextView
-                android:id="@+id/material_dialog_first_min"
-                android:layout_width="@dimen/time_item_width"
-                android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/material_dialog_second_min"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:text="3"
-                android:textColor="@color/time_text_color"
-                android:textSize="64dp" />
-
-            <TextView
-                android:id="@+id/material_dialog_second_min"
-                android:layout_width="@dimen/time_item_width"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:text="0"
-                android:textColor="@color/time_text_color"
-                android:textSize="64dp" />
-
-            <TextView
-                android:layout_width="42dp"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:text=":"
-                android:textColor="@color/datetime_letter_color_selected"
-                android:textSize="48dp" />
-
-        </RelativeLayout>
-    </FrameLayout>
-
-    <GridLayout
-        android:id="@+id/material_dialog_keyboard"
-        android:layout_width="@dimen/time_picker_content_width"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/material_dialog_time_container"
-        android:layout_centerHorizontal="true"
-        android:columnCount="3"
-        android:rowCount="4" />
-</RelativeLayout>
+        android:background="?attr/dialogBackgroundColor">
+
+        <include
+            android:id="@+id/material_dialog_top_header"
+            layout="@layout/top_header" />
+
+        <include
+            android:id="@+id/material_dialog_time_container"
+            layout="@layout/time_digits"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/material_dialog_top_header" />
+
+        <include
+            android:id="@+id/material_dialog_keyboard"
+            layout="@layout/buttons"
+            android:layout_width="@dimen/time_picker_content_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/material_dialog_time_container"
+            android:layout_centerHorizontal="true" />
+
+        <include
+            android:id="@+id/material_dialog_ok_button"
+            layout="@layout/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+</io.codetail.widget.RevealFrameLayout>

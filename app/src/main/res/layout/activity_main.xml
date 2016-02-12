@@ -7,8 +7,37 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <TextView
+    <Button
+        android:id="@+id/show_dialog_button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textColor="@android:color/white"
+        android:text="reveal" />
+
+    <Button
+        android:id="@+id/show_dialog_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:text="reveal" />
+
+    <Button
+        android:id="@+id/show_dialog_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="reveal" />
+
+    <Button
+        android:id="@+id/show_dialog_button4"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="reveal" />
+
 </RelativeLayout>

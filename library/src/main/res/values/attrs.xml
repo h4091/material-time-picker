@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="materialDialogStyle" format="reference" />
+    <declare-styleable name="materialDialogStyleAttrs">
+        <attr name="captionTextStyle" format="reference" />
+        <attr name="captionBackgroundColor" format="color|reference" />
+        <attr name="headerBackgroundColor" format="color|reference" />
+        <attr name="selectionBackgroundColor" format="color|reference" />
+        <attr name="dialogBackgroundColor" format="color|reference" />
+        <attr name="digitColorStyle" format="reference" />
+        <attr name="timeColorStyle" format="color|reference" />
+        <attr name="keyboardColorStyle" format="reference" />
+        <attr name="doneColorStyle" format="reference" />
+    </declare-styleable>
+</resources>

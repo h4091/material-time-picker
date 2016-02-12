@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_max_width" >480dp</dimen>
+    <dimen name="dialog_max_height" >260dp</dimen>
+
+    <dimen name="dialog_width_margin">36dp</dimen>
+    <dimen name="dialog_height_margin">16dp</dimen>
+</resources>

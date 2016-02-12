@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_reveal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/material_dialog_root_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <include
+            android:id="@+id/material_dialog_top_header"
+            layout="@layout/top_header"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true" />
+
+        <include
+            android:id="@+id/material_dialog_time_container"
+            layout="@layout/time_digits"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/material_dialog_top_header" />
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/material_dialog_time_container"
+            android:background="?attr/headerBackgroundColor" />
+
+        <FrameLayout
+            android:id="@+id/transp_sep"
+            android:layout_toLeftOf="@+id/material_dialog_time_container"
+            android:background="@android:color/transparent"
+            android:layout_width="15dp"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/dialogBackgroundColor"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/transp_sep">
+
+            <include
+                android:id="@+id/material_dialog_keyboard"
+                layout="@layout/buttons"
+                android:layout_width="@dimen/time_picker_content_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/material_dialog_ok_button"
+            layout="@layout/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+</io.codetail.widget.RevealFrameLayout>

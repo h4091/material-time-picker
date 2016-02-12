@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="time_kb_val" type="id" />
+    <item name="view_state_id" type="id" />
+
+</resources>
