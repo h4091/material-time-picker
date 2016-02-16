@@ -212,14 +212,6 @@ public class Util {
         }
     }
 
-    public static int pxToDp(final Context context, final float px) {
-        return (int) (px / context.getResources().getDisplayMetrics().density);
-    }
-
-    public static int dpToPx(final Context context, final float dp) {
-        return (int) (dp * context.getResources().getDisplayMetrics().density);
-    }
-
     static void setDialogSize(Activity activity, Dialog dialog,
                               @DimenRes int maxWidthDimenResId,
                               @DimenRes int maxHeightDimenResId) {
@@ -230,20 +222,14 @@ public class Util {
         final WindowManager.LayoutParams params = window.getAttributes();
 
         final Context context = dialog.getContext();
-        final int marginsW = getMargin(context, R.dimen.dialog_width_margin);
-        final int marginsH = getMargin(context, R.dimen.dialog_height_margin);
 
         int widthLimit = getDimension(context, maxWidthDimenResId);
         int heightLimit = getDimension(context, maxHeightDimenResId);
 
-        params.width = Math.min(widthLimit, wh.first - marginsW);
-        params.height = Math.min(heightLimit, wh.second - marginsH);
+        params.width = Math.min(widthLimit, wh.first);
+        params.height = Math.min(heightLimit, wh.second);
 
         window.setAttributes(params);
-    }
-
-    private static int getMargin(Context context, int resId) {
-        return 2 * getDimension(context, resId);
     }
 
     private static int getDimension(Context context, int resId) {
