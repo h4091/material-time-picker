@@ -2,7 +2,7 @@
 
 Reasonably configurable material-time-picker similar to https://dribbble.com/shots/2518892-Time-picker
 
-<img src= "http://i.imgur.com/lt0uFEF.gifv"/>
+<img src= "http://i.imgur.com/G4BHzmW.gif"/>
 
 Sample app is available on v1 branch
 
@@ -37,17 +37,17 @@ Sample app is available on v1 branch
 
   ```  
    <style name="DefMaterialDialogStyle">
-   <item name="captionTextStyle">@style/DefCaptionTextStyle</item> - top header text
-   <item name="captionBackground">@drawable/top_header_bg</item> - top header background
-   <item name="headerBackground">@color/dialog_header</item> - background behind time digits
-   <item name="selectionBackground">@drawable/animated_bg</item> - background of selected time digit
-   <item name="dialogBackground">@drawable/dialog_bg</item> - dialog background
+   <item name="captionTextStyle">@style/DefCaptionTextStyle</item> - top header text appearance
+   <item name="captionBackgroundColor">@drawable/top_header_bg</item> - top header background
+   <item name="headerBackgroundColor">@color/dialog_header</item> - background behind time digits
+   <item name="selectionBackgroundColor">@drawable/animated_bg</item> - background of selected time digit
+   <item name="dialogBackgroundColor">@drawable/dialog_bg</item> - dialog background
    <item name="timeColorStyle">@color/datetime_letter_color_selected</item> - time colons appearance
    <item name="digitColorStyle">@style/DefDigitStyle</item> - time digit appearance
    <item name="keyboardColorStyle">@style/DefKbStyle</item> - 10 buttons appearance
    <item name="doneColorStyle">@style/DefDoneBtnStyle</item> - ok button appearance
    </style>
-   ```             
+   ```
 3. Circular reveal
    ```
    Builder.revealFromView(view);
@@ -62,6 +62,6 @@ Sample app is available on v1 branch
     }
     
     dependencies {
-        compile 'com.github.mostroverkhov:material-time-picker:1.01'
+        compile 'com.github.mostroverkhov:material-time-picker:${libVersion}'
     }
     ```
