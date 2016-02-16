@@ -8,7 +8,7 @@ Sample app is available on v1 branch
 
 1. Create with builder
 
-  For Activity 
+  for Activity 
   ```
    final MaterialTimePickerBuilder builder = new MaterialTimePickerBuilder()
    .withActivity(MainActivity.this)
@@ -62,6 +62,6 @@ Sample app is available on v1 branch
     }
     
     dependencies {
-        compile 'com.github.mostroverkhov:material-time-picker:${libVersion}'
+        compile 'com.github.mostroverkhov:material-time-picker:1.02'
     }
     ```
