@@ -2,7 +2,7 @@
 
 Reasonably configurable material-time-picker similar to https://dribbble.com/shots/2518892-Time-picker
 
-<img src= "http://i.imgur.com/G4BHzmW.gif"/>
+<img src= "http://i.imgur.com/G4BHzmW.gif" width="300"/>
 
 Sample app is available on v1 branch
 
