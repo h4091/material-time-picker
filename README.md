@@ -2,13 +2,13 @@
 
 Reasonably configurable material-time-picker similar to https://dribbble.com/shots/2518892-Time-picker
 
-<img src= "http://i.imgur.com/G4BHzmW.gif"/>
+<img src= "http://i.imgur.com/G4BHzmW.gif" width="300"/>
 
 Sample app is available on v1 branch
 
 1. Create with builder
 
-  For Activity 
+  for Activity 
   ```
    final MaterialTimePickerBuilder builder = new MaterialTimePickerBuilder()
    .withActivity(MainActivity.this)
@@ -62,6 +62,6 @@ Sample app is available on v1 branch
     }
     
     dependencies {
-        compile 'com.github.mostroverkhov:material-time-picker:${libVersion}'
+        compile 'com.github.mostroverkhov:material-time-picker:1.02'
     }
     ```
